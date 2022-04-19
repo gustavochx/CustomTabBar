@@ -1,5 +1,5 @@
 # CustomTabBar
-- Example of how create a custom TabBar in SwiftUI and avoiding navigation problems  
+- Example of how create a custom TabBar in SwiftUI and avoiding navigation bugs (as me 😅)  
 - Built with Xcode 13.2
 
 [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
