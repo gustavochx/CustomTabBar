@@ -11,20 +11,18 @@ struct ContentView: View {
 
     @StateObject var viewRouter = ViewRouter()
 
+    enum Constants {
+        static let stackSpacing: CGFloat = 0.0
+    }
+
     var body: some View {
-        VStack(spacing: 0.0) {
-
-            Spacer()
-
+        VStack(spacing: Constants.stackSpacing) {
             switch viewRouter.currentPage {
             case .home:
-                Text("Home")
+                HomeView()
             case .profile:
                 ProfileView()
             }
-
-            Spacer()
-            
             TabBarView(viewRouter: viewRouter)
         }.edgesIgnoringSafeArea(.bottom)
     }

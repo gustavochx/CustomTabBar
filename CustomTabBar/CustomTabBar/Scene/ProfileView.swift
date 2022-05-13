@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text("Profile")
+        List {
+            Text("Profile tab")
+            Text("Maybe not hehehe")
+        }
     }
 }
 
