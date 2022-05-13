@@ -14,8 +14,6 @@ struct TabBarView: View {
     enum Constants {
         static let tabIconSpacing: CGFloat = 100.0
         static let tabBarHeight: CGFloat = 80.0
-        static let iconWidth: CGFloat = 24.0
-        static let iconHeight: CGFloat = 24.0
         static let tabBarRadius: CGFloat = 2.0
     }
 
@@ -25,20 +23,9 @@ struct TabBarView: View {
 
     var body: some View {
         HStack(spacing: Constants.tabIconSpacing) {
-
-            TabBarIcon(viewRouter: viewRouter,
-                       assignedPage: .home,
-                       width: Constants.iconWidth,
-                       height: Constants.iconHeight,
-                       iconName: "homekit",
-                       tabName: "Home")
-
-            TabBarIcon(viewRouter: viewRouter,
-                       assignedPage: .profile,
-                       width: Constants.iconWidth,
-                       height: Constants.iconHeight,
-                       iconName: "person.crop.circle",
-                       tabName: "Profile")
+            ForEach(viewRouter.tabs) { tabViewModel in
+                TabBarIcon(viewRouter: viewRouter, viewModel: tabViewModel)
+            }
         }
         .frame(width: UIScreen.main.bounds.width,
                height: Constants.tabBarHeight)
