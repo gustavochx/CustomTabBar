@@ -17,13 +17,15 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: Constants.stackSpacing) {
+
             switch viewRouter.currentPage {
             case .home:
-                HomeView()
+                HomeView(viewRouter: viewRouter)
             case .profile:
                 ProfileView()
             }
             TabBarView(viewRouter: viewRouter)
+
         }.edgesIgnoringSafeArea(.bottom)
     }
 }

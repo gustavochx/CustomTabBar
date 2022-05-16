@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15B191A6282DDC7B003215B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B191A5282DDC7B003215B3 /* HomeView.swift */; };
+		15B191AB28327DD3003215B3 /* ChildHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B191AA28327DD3003215B3 /* ChildHomeView.swift */; };
 		15D6AA68280C91A10058FB8F /* CustomTabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6AA67280C91A10058FB8F /* CustomTabBarApp.swift */; };
 		15D6AA6A280C91A10058FB8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6AA69280C91A10058FB8F /* ContentView.swift */; };
 		15D6AA6C280C91A60058FB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D6AA6B280C91A60058FB8F /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		15B191A5282DDC7B003215B3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		15B191AA28327DD3003215B3 /* ChildHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildHomeView.swift; sourceTree = "<group>"; };
 		15D6AA64280C91A10058FB8F /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D6AA67280C91A10058FB8F /* CustomTabBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarApp.swift; sourceTree = "<group>"; };
 		15D6AA69280C91A10058FB8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				15D6AA93280C9BA80058FB8F /* ProfileView.swift */,
 				15D6AA69280C91A10058FB8F /* ContentView.swift */,
 				15B191A5282DDC7B003215B3 /* HomeView.swift */,
+				15B191AA28327DD3003215B3 /* ChildHomeView.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				15D6AA6A280C91A10058FB8F /* ContentView.swift in Sources */,
 				15D6AAA1280E038F0058FB8F /* ViewRouter.swift in Sources */,
 				15D6AA92280C91CE0058FB8F /* TabBarView.swift in Sources */,
+				15B191AB28327DD3003215B3 /* ChildHomeView.swift in Sources */,
 				15D6AA68280C91A10058FB8F /* CustomTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
