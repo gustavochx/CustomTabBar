@@ -37,7 +37,6 @@ struct TabBarIcon: View {
     var body: some View {
         VStack {
             Image(systemName: viewModel.iconName)
-                .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: viewModel.width,
                        height: viewModel.height)
@@ -53,6 +52,7 @@ struct TabBarIcon: View {
     }
 }
 
+#if DEBUG
 struct TabBarIcon_Previews: PreviewProvider {
     static var previews: some View {
         TabBarIcon(
@@ -65,3 +65,4 @@ struct TabBarIcon_Previews: PreviewProvider {
         )
     }
 }
+#endif

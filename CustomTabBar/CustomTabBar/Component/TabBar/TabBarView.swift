@@ -34,9 +34,10 @@ struct TabBarView: View {
     }
 }
 
+#if DEBUG
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView(viewRouter: .init())
     }
 }
-
+#endif
